@@ -1,14 +1,14 @@
 :root {
-	--primary-color: #c7a17a;
-	--background-color: #f9f5f0;
+	--primary-color: #f5f2f2;
+	--background-color: #fce8a7;
 	--dark-color: #151515;
 }
 
 body{
-	background-color: #4A2A00;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23503410' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23563f21' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%235c4931' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23615442' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23675e52' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%236d6963' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23737373' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: cover;
+	background-color: #000000;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23503410' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23563f21' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%235c4931' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23615442' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23675e52' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%236d6963' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23737373' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 html {
@@ -20,8 +20,6 @@ html {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	color: #f3c807;
-	font-size: 1.3rem;
 }
 
 
@@ -41,7 +39,7 @@ html {
 /* HEADER */
 
 .container-hero {
-	background-color: #000;
+	background-color: var(--background-color);
 }
 
 .hero {
@@ -59,7 +57,6 @@ html {
 
 .customer-support i {
 	font-size: 3.3rem;
-	color: #ffc400;
 }
 
 .content-customer-support {
@@ -79,8 +76,8 @@ html {
 
 .container-logo h1 a {
 	text-decoration: none;
-	color: #f3c807;
-	font-size: 5rem;
+	color: #000;
+	font-size: 3rem;
 	text-transform: uppercase;
 	letter-spacing: -1px;
 }
@@ -93,14 +90,14 @@ html {
 
 .container-user .fa-user {
 	font-size: 3rem;
-	color: #f3c807;
+	color: var(--primary-color);
 	padding-right: 2.5rem;
 	border-right: 1px solid #e2e2e2;
 }
 
 .container-user .fa-basket-shopping {
 	font-size: 3rem;
-	color: #f3c807;
+	color: var(--primary-color);
 	padding-left: 1rem;
 }
 
@@ -136,7 +133,7 @@ html {
 
 .menu a {
 	text-decoration: none;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	color: var(--dark-color);
 	font-weight: 600;
 	text-transform: uppercase;
@@ -223,7 +220,7 @@ html {
 
 .content-banner p {
 	color: var(--primary-color);
-	font-size: 3.2rem;
+	font-size: 1.2rem;
 	margin-bottom: 1rem;
 	font-weight: 500;
 }
@@ -249,7 +246,7 @@ html {
 /* MAIN CONTENT */
 
 .main-content {
-	background-color: #000;
+	background-color: var(--background-color);
 }
 
 /* FEATURES */
@@ -663,7 +660,7 @@ html {
 .content-blog h3 {
 	font-size: 1.8rem;
 	margin-bottom: 1.7rem;
-	color: #f3c807;
+	color: var(--dark-color);
 	font-weight: 500;
 }
 
@@ -778,6 +775,31 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.social-icons span i {
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+.facebook {
+	background-color: #3b5998;
+}
+
+.twitter {
+	background-color: #00acee;
+}
+
+.instagram {
+	background: linear-gradient(
+		#405de6,
+		#833ab4,
+		#c13584,
+		#e1306c,
+		#fd1d1d,
+		#f56040,
+		#fcaf45
+	);
 }
 
 .content p {
@@ -1045,36 +1067,37 @@ html {
 body {
 	font-family: Arial, sans-serif;
 	background-color: #f9f9f9;
-  
+  }
   
   #formulario {
 	width: 50%;
 	margin: 40px auto;
 	padding: 20px;
-	border: 1px solid #ccc;
+	border: 1px solid #fdcf00;
 	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 10px rgb(255, 255, 255);
   }
   
   #formulario h2 {
 	margin-top: 0;
-	color: #333;
+	color: #020202;
   }
   
   label {
 	display: block;
 	margin-bottom: 10px;
+	color: #000000;
   }
   
   input[type="text"], input[type="email"], textarea {
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 20px;
-	border: 1px solid #ccc;
+	border: 1px solid #ffbb00;
   }
   
   input[type="submit"] {
-	background-color: #4CAF50;
+	background-color: #ffc400;
 	color: #fff;
 	padding: 10px 20px;
 	border: none;
@@ -1083,6 +1106,7 @@ body {
   }
   
   input[type="submit"]:hover {
-	background-color: #3e8e41;
+	background-color: #5e3616;
   }
-}
+
+  
